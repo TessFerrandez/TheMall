@@ -1,0 +1,35 @@
+﻿<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">{{::vm.store.Name}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <img class="img-responsive" src="assets/img/image{{vm.store.StoreId}}.jpg" alt="" />
+    </div>
+    <div class="col-md-4">
+        <h3>{{::vm.store.Name}}</h3>
+        <p>{{::vm.store.Description}}</p>
+        <ul class="nav nav-tabs">
+            <li ng-click="vm.setTab(0)" ng-class="(vm.tab == 0) ? 'active' : ''"><a>Hours</a></li>
+            <li ng-click="vm.setTab(1)" ng-class="(vm.tab == 1) ? 'active' : ''"><a>Contact</a></li>
+            <li ng-click="vm.setTab(2)" ng-class="(vm.tab == 2) ? 'active' : ''"><a>Location</a></li>
+        </ul>
+        <div class="tab-content" ng-show="(vm.tab == 0)">
+            <div class="label label-default">Open week days:</div>
+            <h3>{{vm.store.WeekDayOpeningHours}}</h3>
+            <div class="label label-default">Open week ends:</div>
+            <h3>{{vm.store.WeekEndOpeningHours}}</h3>
+        </div>
+        <div class="tab-content" ng-show="(vm.tab == 1)">
+            <div class="label label-default">Home page</div>
+            <h3><a href="{{vm.store.StoreUrl}}">{{vm.store.StoreUrl}}</a></h3>
+            <div class="label label-default">Email</div>
+            <h3><a href="mailto:{{vm.store.Email}}">{{vm.store.Email}}</a></h3>
+        </div>
+        <div class="tab-content" ng-show="(vm.tab == 2)">
+            <div class="label label-default">Store location</div>
+            <h2>{{vm.store.Location}}</h2>
+        </div>
+    </div>
+</div>
