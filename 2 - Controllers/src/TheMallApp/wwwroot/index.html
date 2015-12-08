@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html ng-app ="mallApp">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <title>Super Premium Shopping Mall</title>
+</head>
+<body>
+
+    <ng-include src="'templates/header.html'"></ng-include>
+    <div class="container">
+
+        <!-- content-->
+        <ng-include src="'templates/storeListView.html'"></ng-include>
+
+        <!-- Footer -->
+        <hr/>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Super Premium Shopping Mall 2015 -- all images are from <a href="http://www.pexels.com">http://www.pexels.com</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- library scripts -->
+    <script src="lib/angular/angular.js"></script>
+
+    <!-- app scripts -->
+    <script src="app/app.js"></script>
+
+    <!-- domain classes -->
+    <script src="app/domain/Store.js"></script>
+
+    <!-- services -->
+    
+    <!-- filters and directives -->
+
+    <!-- controllers -->
+    <script src="app/navigation/NavigationController.js"></script>
+    <script src="app/stores/StoreListController.js"></script>
+</body>
+</html>
