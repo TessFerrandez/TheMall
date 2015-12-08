@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{88B561B2-5C05-4984-944D-F219366809DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99D55F8E-11B6-45B3-8523-C7B83B7481F2}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TheMallApp", "src\TheMallApp\TheMallApp.xproj", "{D2CFF0B6-3F5B-4ACA-A2AE-524495AEE4F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2CFF0B6-3F5B-4ACA-A2AE-524495AEE4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2CFF0B6-3F5B-4ACA-A2AE-524495AEE4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2CFF0B6-3F5B-4ACA-A2AE-524495AEE4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2CFF0B6-3F5B-4ACA-A2AE-524495AEE4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2CFF0B6-3F5B-4ACA-A2AE-524495AEE4F3} = {88B561B2-5C05-4984-944D-F219366809DB}
+	EndGlobalSection
+EndGlobal
